@@ -21,6 +21,7 @@ header {
 	align-items: center;
 	width: 100%;
 	height: 88px;
+	z-index: 9999;
 }
 header button {
 	border: none;
@@ -32,6 +33,62 @@ header .btn-menu {
 	color: #dfe1e3;
 	font-size: 1.5rem;
 	padding: 15px 30px;
+}
+/*
+해더 영역에 매뉴버튼 테스트 버전입니다.
+*/
+/* header .wrap-btn {
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	margin: 0 20px;
+	border: 1px solid red;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.4s;
+} */
+header .btn-menu2 {
+	/* margin: 0 20px; */
+	width: 30px;
+	height: 3px;
+	border-radius: 3px;
+	background: black;
+	position: relative;
+	transition: all 0.4s;
+}
+header .btn-menu2::before,
+header .btn-menu2::after {
+	content: "";
+	width: 30px;
+	height: 3px;
+	border-radius: 3px;
+	background: black;
+}
+/* header .btn-menu2:hover .btn-menu2 {
+	background: transparent;
+} */
+header .btn-menu2:hover .btn-menu2::before {
+	transform: rotate(-45deg);
+	/* position: absolute; */
+	top: 0;
+	left: 0;
+}
+header .btn-menu2:hover .btn-menu2::after {
+	transform: rotate(45deg);
+	/* position: absolute; */
+	top: 0;
+	left: 0;
+}
+header .btn-menu2::before {
+	position: absolute;
+	left: 0;
+	top: -8px;
+}
+header .btn-menu2::after {
+	position: absolute;
+	left: 0;
+	top: 8px;
 }
 header .btn-login {
 	border: 1px solid #dfe1e3;
@@ -160,7 +217,11 @@ section.section4 article {
 	width: 300px;
 	border: 1px solid lightgray;
 	border-radius: 4px;
-	/* box-shadow: ; */
+	transition: all 0.4s;
+}
+section.section4 article:hover {
+	box-shadow: 5px 5px 5px 0px lightgray;
+	transform: translateY(-3px) scale(1.1);
 }
 section.section4 article img {
 	width: 100%;
