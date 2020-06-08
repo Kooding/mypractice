@@ -2,14 +2,26 @@ html,
 body,
 h1,
 h2,
-p {
+p,
+ul,
+li {
 	margin: 0;
 	padding: 0;
 }
 * {
 	box-sizing: border-box;
 }
-
+h1,
+h2,
+h3 {
+	font-weight: bold;
+	font-family: "Montserrat", sans-serif;
+}
+p,
+span,
+a {
+	font-family: "Open Sans", sans-serif;
+}
 header {
 	position: fixed;
 	top: 0;
@@ -21,7 +33,7 @@ header {
 	align-items: center;
 	width: 100%;
 	height: 88px;
-	z-index: 9999;
+	z-index: 10;
 }
 header button {
 	border: none;
@@ -33,77 +45,23 @@ header .btn-menu {
 	color: #dfe1e3;
 	font-size: 1.5rem;
 	padding: 15px 30px;
-}
-/*
-해더 영역에 매뉴버튼 테스트 버전입니다.
-*/
-/* header .wrap-btn {
-	cursor: pointer;
-	width: 50px;
-	height: 50px;
-	margin: 0 20px;
-	border: 1px solid red;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	transition: all 0.4s;
-} */
-header .btn-menu2 {
-	/* margin: 0 20px; */
-	width: 30px;
-	height: 3px;
-	border-radius: 3px;
-	background: black;
-	position: relative;
-	transition: all 0.4s;
-}
-header .btn-menu2::before,
-header .btn-menu2::after {
-	content: "";
-	width: 30px;
-	height: 3px;
-	border-radius: 3px;
-	background: black;
-}
-/* header .btn-menu2:hover .btn-menu2 {
 	background: transparent;
-} */
-header .btn-menu2:hover .btn-menu2::before {
-	transform: rotate(-45deg);
-	/* position: absolute; */
-	top: 0;
-	left: 0;
-}
-header .btn-menu2:hover .btn-menu2::after {
-	transform: rotate(45deg);
-	/* position: absolute; */
-	top: 0;
-	left: 0;
-}
-header .btn-menu2::before {
-	position: absolute;
-	left: 0;
-	top: -8px;
-}
-header .btn-menu2::after {
-	position: absolute;
-	left: 0;
-	top: 8px;
 }
 header .btn-login {
+	font-family: "Open Sans", sans-serif;
 	border: 1px solid #dfe1e3;
 	border-radius: 4px;
 	color: #737a82;
 	font-size: 14px;
-	font-weight: 900;
+	font-weight: 800;
 	padding: 15px 30px;
+	background-color: transparent;
 	transition: background-color 0.4s;
 }
 header .btn-login:hover {
 	background-color: #f7f7f7;
 }
 header #title {
-	/* font style 초기화 */
 	text-decoration: none;
 }
 header #title h1 {
@@ -111,8 +69,6 @@ header #title h1 {
 	font-family: "Pacifico", cursive;
 	letter-spacing: 2px;
 }
-
-/* 배경화면 */
 section.section1 {
 	background: url(./images/banner.jpg) center;
 	height: 680px;
@@ -124,7 +80,6 @@ section.section1 {
 section.section1 h2 {
 	color: #24a3c4;
 	font-size: 44px;
-	font-weight: 900;
 }
 section.section1 p {
 	margin: 25px 0;
@@ -140,8 +95,8 @@ section.section1 button {
 	margin: 10px 0 0 0;
 	border: 1px solid #f7755e;
 	border-radius: 4px;
+	outline: none;
 	font-size: 14px;
-	font-weight: 900;
 	transition: background-color 0.4s;
 	cursor: pointer;
 }
@@ -158,7 +113,7 @@ section.section2 section {
 	width: 30%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 section.section2 section:first-child {
 	text-align: right;
@@ -169,25 +124,25 @@ section.section2 section:last-child {
 section.section2 section article h3 {
 	color: #24a3c4;
 }
+section.section2 section article {
+	padding: 0 0 35px 0;
+}
 section.section2 .profile {
-	/* max-width: 330px; */
-	/* max-height: 300px; */
 	border-radius: 100%;
 }
 section.section3 {
 	background-color: #f7755e;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: center;
 	height: 215px;
-	padding: 88px 10%;
+	padding: 88px 0;
 	box-sizing: content-box;
 	text-align: center;
 }
 section.section3 h2 {
 	color: #fff;
-	font-weight: 900;
 	letter-spacing: 1.25px;
 }
 section.section3 h2 + p {
@@ -198,7 +153,7 @@ section.section3 h2 + p {
 section.section3 h2 + p + div .author {
 	font-size: 1.2rem;
 	color: #fff;
-	font-weight: bold;
+	font-weight: 800;
 }
 section.section3 h2 + p + div .company {
 	color: #fff;
@@ -237,11 +192,98 @@ section.section4 article img + div h3 {
 section.section4 article img + div p {
 	color: #737a82;
 }
-section.section5 {
+footer.section5 {
 	background-color: #24a3c4;
-	height: 350px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 88px 10%;
+	box-sizing: content-box;
+}
+footer.section5 h2 {
+	font-weight: 900;
+	letter-spacing: 1.25px;
+}
+footer.section5 * {
+	color: #fff;
+	margin: 10px 0;
+}
+footer.section5 .footer-info span {
+	margin: 0 20px 0 0;
+	font-weight: 200;
+}
+footer.section5 .footer-info span:last-child {
+	margin: 0;
+}
+footer.section5 .footer-info i {
+	color: #f7755e;
+	margin: 5px;
+}
+footer.section5 hr {
+	width: 50%;
+}
+footer.section5 p {
+	font-size: 14px;
+	font-weight: 200;
+}
+aside {
+	position: fixed;
+	top: 0;
+	left: -20%;
+	z-index: 999;
+	width: 20%;
+	height: 100vh;
+	background: #24a3c4;
+	transition: all 0.4s;
+}
+aside.active {
+	position: fixed;
+	top: 0;
+	left: 0%;
+}
+aside div.btn-close {
+}
+aside i {
+	float: right;
+	cursor: pointer;
+	padding: 5px 7px;
+	font-size: 2rem;
+	color: white;
+	transition: color 0.4s;
+}
+aside i:hover {
+	color: #66bbd3;
+}
+aside ul {
+	width: 100%;
+	clear: both;
+	list-style: none;
+	padding: 30px;
+	font-size: 1.25rem;
+}
+aside ul li {
+	width: 100%;
+	padding: 10px 0;
+	border-bottom: 1px solid #66bbd3;
+	transition: background-color 0.4s;
+}
+aside ul li:last-child {
+	border: none;
+}
+aside ul li:hover {
+	background-color: #66bbd3;
+}
+aside ul li a {
+	display: block;
+	text-decoration: none;
+	color: #dfe1e3;
 }
 @media screen and (max-width: 960px) {
+	section.section1 h2 {
+		color: #24a3c4;
+		font-size: 35px;
+	}
 	section.section2 {
 		display: flex;
 		flex-direction: column;
@@ -249,12 +291,24 @@ section.section5 {
 	section.section2 .profile {
 		order: -1;
 	}
+	section.section2 section article {
+		padding: 0 0 10px 0;
+		border-bottom: 1px solid lightgray;
+	}
 	section.section2 section:first-child {
 		width: 80%;
 		text-align: center;
 	}
 	section.section2 section:last-child {
 		width: 80%;
+		text-align: center;
+	}
+	footer.section5 .footer-info {
+		height: 100px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
 		text-align: center;
 	}
 }
