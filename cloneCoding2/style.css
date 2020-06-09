@@ -1,3 +1,10 @@
+:root {
+	--font-size-large: 4rem;
+	--font-size-medium: 14px;
+	--font-size-regular: 14px;
+	--font-size-small: 14px;
+	--font-size-micro: 14px;
+}
 html,
 body,
 h1,
@@ -12,19 +19,41 @@ span {
 * {
 	box-sizing: border-box;
 }
-a {
-	text-decoration: none;
-	color: #ffffff;
-}
+
 h1,
 h2,
 h3,
 p {
 	font-family: "Raleway", sans-serif;
 }
-body {
+/* a tag base style */
+.link {
+	text-decoration: none;
+	color: #ffffff;
 }
-header {
+
+/* button base style */
+.btn {
+	border: none;
+	outline: none;
+	font-family: "Raleway", sans-serif;
+	cursor: pointer;
+	transition: color 0.4s;
+	background-color: transparent;
+}
+body {
+	/* display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: url(/cloneCoding2/images/bg.jpg) no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.5; */
+}
+.header {
 	position: sticky;
 	top: 0;
 	width: 100%;
@@ -35,40 +64,33 @@ header {
 	background-color: #111111;
 	color: #ffffff;
 	font-family: "Raleway", sans-serif;
+	font-size: var(--font-size-medium);
+	z-index: 10;
 }
-header > h1 {
-	font-size: 14px;
+.header__title {
+	font-size: inherit;
 	padding: 10px 20px;
 }
-header > button {
-	/* button style reset */
-	border: none;
-	outline: none;
-
-	font-size: 14px;
+.header__menu--btn {
+	font-size: inherit;
 	padding: 10px 20px;
-	font-family: "Raleway", sans-serif;
 	color: #888888;
-	background: transparent;
-	cursor: pointer;
-	transition: color 0.4s;
 }
-header > button:hover {
+.header__menu--btn:hover {
 	color: #ffffff;
 }
-header > button i {
+.header__menu--icon {
 	margin-right: 5px;
 }
-section.section-banner {
+.banner {
 	position: relative;
 	height: 513px;
 	overflow: hidden;
 	background: linear-gradient(135deg, #ce1b28 0%, #111111 74%);
-	z-index: 10;
+	z-index: 1;
 }
 
-video#bg-video,
-video#bg-video source {
+.banner__video {
 	transform: translateX(60%) translateY(60%);
 	position: absolute;
 	bottom: 50%;
@@ -78,17 +100,7 @@ video#bg-video source {
 	animation: intro-bg 3s linear 2s;
 	animation-fill-mode: forwards;
 }
-#bg-opacity {
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0.5;
-	height: 100%;
-	width: 100%;
-	color: #ffffff;
-	z-index: 100;
-}
-#banner-text {
+.banner__inner {
 	color: #ffffff;
 	height: 100%;
 	display: flex;
@@ -115,19 +127,22 @@ video#bg-video source {
 		opacity: 1;
 	}
 }
-#banner-text h1 {
+.banner__title {
 	font-size: 4rem;
 	font-weight: 300;
 }
-#banner-text p {
+.banner__description {
 	color: #a88c8c;
 	font-size: 1.25rem;
 	font-weight: 400;
 }
-#banner-text p a {
+.banner__link {
 	color: #a88c8c;
 	transition: color 0.4s;
 }
-#banner-text p a:hover {
+.banner__link:hover {
 	color: #ffffff;
+}
+.main {
+	height: 3000px;
 }

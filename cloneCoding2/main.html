@@ -13,27 +13,33 @@
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="/style.css" />
+		<link rel="stylesheet" href="/cloneCoding2/style.css" />
 	</head>
 	<body>
-		<header>
-			<h1><a href="#">Industrious</a></h1>
-			<button><i class="fas fa-bars"></i>Menu</button>
+		<header class="header">
+			<h1 class="header__title">
+				<a class="link" href="#">Industrious</a>
+			</h1>
+			<button class="btn header__menu--btn">
+				<i class="fas fa-bars header__menu--icon"></i>Menu
+			</button>
 		</header>
-		<section class="section-banner">
-			<video id="bg-video" autoplay loop muted controls>
-				<source src="/video/banner.mp4" type="video/mp4" />
+		<section class="banner">
+			<video class="banner__video" autoplay loop muted controls>
+				<source src="video/banner.mp4" type="video/mp4" />
 			</video>
 			<!-- <div id="bg-opacity"></div> -->
-			<div id="banner-text">
-				<h1>INDUSTRIOUS</h1>
-				<p>
+			<div class="banner__inner">
+				<hl class="banner__title">INDUSTRIOUS</hl>
+				<p class="banner__description">
 					A responsive business oriented template with a video
 					background<br />
-					designed by <a href="#">TEMPLATED</a> and released under the
-					Creative Commons License.
+					designed by
+					<a class="link banner__link" href="#">TEMPLATED</a> and
+					released under the Creative Commons License.
 				</p>
 			</div>
 		</section>
+		<section class="main"></section>
 	</body>
 </html>
