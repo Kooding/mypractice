@@ -146,7 +146,7 @@ body::before {
 .banner__description {
 	color: #a88c8c;
 	text-align: center;
-	font-size: var(--font-size-medium);
+	font-size: var(--font-size-regular);
 	font-weight: 400;
 	line-height: 2rem;
 	letter-spacing: 0.5px;
@@ -184,7 +184,7 @@ body::before {
 	flex-wrap: wrap;
 	padding: 20px;
 	width: 80%;
-	border: 1px solid red;
+
 	/* height: 900px; */
 }
 .article {
