@@ -11,6 +11,8 @@
 * background: linear-gradient(deg, color percent%, color percent%);
 * video tag, source tag
 * position: sticky
-  
+* 가상요소 ::after 와 ::before의 이해
+* 
 ## 문제와 해결했던 방법들
 1. (6월 9일) position: fixed의 단점. - https://www.notion.so/position-fixed-7adc47857d29451f8a9e44603ef2ef97
+2. 슬라이드 메뉴 밖 클릭처리
