@@ -296,6 +296,7 @@ body::before {
 .main__section2 .main__description {
 	color: rgba(255, 255, 255, 0.75);
 }
+
 /* section3 */
 .main__section3 {
 	text-align: center;
@@ -347,6 +348,7 @@ body::before {
 .article__name--red {
 	color: #ce1b28;
 }
+
 /* footer style */
 .footer {
 	background: #111111;
@@ -434,6 +436,9 @@ body::before {
 	.article {
 		width: 47%;
 	}
+	.main__section3 .article {
+		width: 47%;
+	}
 	.article__name {
 		font-size: 14px;
 	}
@@ -462,6 +467,9 @@ body::before {
 		width: 80%;
 	}
 	.article {
+		width: 100%;
+	}
+	.main__section3 .article {
 		width: 100%;
 	}
 }
