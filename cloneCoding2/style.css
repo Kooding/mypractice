@@ -144,20 +144,26 @@ body::before {
 /* banner */
 .banner {
 	position: relative;
-	top: 0;
-	left: 0;
 	width: 100%;
-	height: 513px;
+	height: 400px;
 	overflow: hidden;
+	outline: 1px solid red;
 }
-
+.banner__img {
+	position: absolute;
+	bottom: 50%;
+	right: 50%;
+	transform: translateX(50%) translateY(50%);
+	max-width: 100%;
+	/* z-index: 4; */
+}
 .banner__video {
 	position: absolute;
 	bottom: 50%;
 	right: 50%;
 	transform: translateX(50%) translateY(50%);
 	width: 100%;
-	z-index: -1;
+	/* z-index: -1; */
 }
 .banner__background {
 	position: absolute;
@@ -437,6 +443,12 @@ body::before {
 }
 /* tablet */
 @media (max-width: 768px) {
+	.banner {
+		height: 270px;
+	}
+	.banner__video {
+		z-index: -1;
+	}
 	.main__description {
 		width: 80%;
 	}
@@ -446,6 +458,10 @@ body::before {
 }
 /* mobile */
 @media (max-width: 425px) {
+	.banner {
+		min-height: 100px;
+		height: 200px;
+	}
 	.main__description {
 		width: 80%;
 	}
