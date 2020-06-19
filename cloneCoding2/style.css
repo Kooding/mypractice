@@ -431,15 +431,8 @@ body::before {
 	color: #888888;
 }
 @media (max-width: 1023px) {
-	.main__description {
-	}
-	.main__contents {
-		outline: 1px solid yellow;
-	}
 	.article {
 		width: 47%;
-	}
-	.banner__video {
 	}
 }
 /* tablet */
@@ -447,23 +440,14 @@ body::before {
 	.main__description {
 		width: 80%;
 	}
-	.main__contents {
-		outline: 1px solid blue;
-	}
 	.article {
-		/* min-width: 310px; */
 		width: 100%;
-		margin: 10px 0;
-		padding: 2rem;
 	}
 }
 /* mobile */
 @media (max-width: 425px) {
 	.main__description {
 		width: 80%;
-	}
-	.main__contents {
-		outline: 1px solid green;
 	}
 	.article {
 		width: 100%;
