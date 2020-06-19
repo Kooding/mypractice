@@ -3,7 +3,6 @@ window.addEventListener("load", () => {
 	const slideMenu = document.querySelector(".slide-menu");
 	const menuLink = document.querySelector(".menu__link");
 	const menuCloseBtn = document.querySelector(".menu__close-btn");
-	const videoEl = document.querySelector(".banner__video");
 
 	menuBtn.addEventListener("click", () => {
 		slideMenu.classList.toggle("active");
