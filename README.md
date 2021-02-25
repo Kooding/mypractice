@@ -6,6 +6,10 @@ https://templated.co/intensify
 
 를 보고 코딩하였습니다.
 
+## 링크
+https://kooding.github.io/mypractice/cloneCoding2/main.html
+
+를 통해 확인 가능합니다.
 ---
 
 ## 피드백 받고싶은점
