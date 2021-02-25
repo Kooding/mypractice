@@ -9,9 +9,8 @@ https://templated.co/intensify
 ## 링크
 https://kooding.github.io/mypractice/cloneCoding2/main.html
 
-를 통해 확인 가능합니다.
----
 
+---
 ## 피드백 받고싶은점
 * 의미있는 태그들을 사용했는지
 * id와 class를 적절하게 썻는지
